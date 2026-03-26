@@ -4,9 +4,9 @@ spring:
       enabled: true
 
   datasource:
-    url: jdbc:mysql://localhost:14500/eca?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/eca?createDatabaseIfNotExist=true
     username: root
-    password: mysql
+    password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
