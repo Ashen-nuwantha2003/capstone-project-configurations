@@ -6,11 +6,22 @@ spring:
 #  mongodb:
 #    uri: mongodb://root:qIorB0QTMZbwvqR1b9WcOx8zpbsgJJuumfy-95BaIN4pWxlY@2c531005-1175-4e9d-a8cf-e98b8c50254b.asia-southeast1.firestore.goog:443/db-capstone-v2?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
   mongodb:
-    uri: mongodb://root:1234@localhost:27017/eca?authSource=admin
+    host: localhost
+    port: 27017
+    database: eca
+    username: root
+    password: 1234
+    authentication-database: admin
 
 server:
   port: 0
 
 eureka:
   instance:
-    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    hostname: localhost
+    instance-id: ${spring.application.name}:${random.value}
+#eureka:
+#  instance:
+#    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
