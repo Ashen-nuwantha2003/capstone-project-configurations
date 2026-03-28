@@ -3,13 +3,9 @@ spring:
     problemdetails:
       enabled: true
 
-  mongodb:
-    host: localhost
-    port: 27017
-    database: eca
-    username: root
-    password: 1234
-    authentication-database: admin
+  data:
+    mongodb:
+      uri: mongodb://root:1234@localhost:27017/eca?authSource=admin
 #  mongodb:
 #    uri: mongodb://root:qIorB0QTMZbwvqR1b9WcOx8zpbsgJJuumfy-95BaIN4pWxlY@2c531005-1175-4e9d-a8cf-e98b8c50254b.asia-southeast1.firestore.goog:443/db-capstone-v2?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
 
