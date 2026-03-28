@@ -3,8 +3,6 @@ spring:
     problemdetails:
       enabled: true
 
-#  mongodb:
-#    uri: mongodb://root:qIorB0QTMZbwvqR1b9WcOx8zpbsgJJuumfy-95BaIN4pWxlY@2c531005-1175-4e9d-a8cf-e98b8c50254b.asia-southeast1.firestore.goog:443/db-capstone-v2?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
   mongodb:
     host: localhost
     port: 27017
@@ -12,6 +10,8 @@ spring:
     username: root
     password: 1234
     authentication-database: admin
+#  mongodb:
+#    uri: mongodb://root:qIorB0QTMZbwvqR1b9WcOx8zpbsgJJuumfy-95BaIN4pWxlY@2c531005-1175-4e9d-a8cf-e98b8c50254b.asia-southeast1.firestore.goog:443/db-capstone-v2?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
 
 server:
   port: 0
